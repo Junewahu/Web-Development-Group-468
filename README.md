@@ -135,3 +135,6 @@ themeToggle.addEventListener('click', () => {
 
 ## 📜 License
 MIT License - Free for personal and commercial use 👍   
+
+## Developers
+Created by group 468: june mwangi - junewahu@gmail.com victor mikae - mikaev135@gmail.com evans mugendi - acemugendi6@gmail.com bolly kevin echessa - bollykevin75@gmail.com gift odoyo - otienogift1@gmail.com stellah wycliff - stellahdaniel71@gmail.com sibongakonke bhengu- snbhengu08@gmail.com ambuche david - ddoronje25@gmail.com nicole ochieng - nicoleochieng7@gmail.com
