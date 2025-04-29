@@ -1,0 +1,499 @@
+:root {
+    --dark-green: #1a3e2f;
+    --medium-green: #2d5e4a;
+    --light-green: #3d8b6d;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --dark-text: #333333;
+    --light-text: #f8f9fa;
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+    --dark-green: #3d8b6d;
+    --medium-green: #2d5e4a;
+    --light-green: #4daa89;
+    --white: #121212;
+    --light-gray: #1e1e1e;
+    --dark-text: #f8f9fa;
+    --light-text: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
+    background-color: var(--white);
+    padding-top: 70px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation */
+.navbar {
+    padding: 15px 0;
+    transition: all 0.3s;
+    background-color: var(--dark-green);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 15px;
+    color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--light-green);
+}
+
+.btn-primary {
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--medium-green);
+    border-color: var(--medium-green);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 0;
+    background-color: var(--light-gray);
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.hero-section h1 span {
+    color: var(--light-green);
+}
+
+.hero-section h2 {
+    font-size: 24px;
+    color: var(--medium-green);
+    margin-bottom: 25px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--dark-text);
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-outline {
+    border: 2px solid var(--light-green);
+    color: var(--light-green);
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+/* Section Styling */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--dark-green);
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--light-green);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--light-green);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.personal-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--dark-text);
+}
+
+.personal-info strong {
+    color: var(--dark-green);
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--light-gray);
+    color: var(--dark-green);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+/* Services Section */
+.services-section {
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.service-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: var(--light-green);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--dark-green);
+}
+
+.service-card p {
+    color: var(--dark-text);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--dark-text);
+}
+
+.skills-list i {
+    color: var(--light-green);
+    margin-right: 10px;
+}
+
+.skills-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-images img {
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+}
+
+/* Other Skills Section */
+.other-skills-section {
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.stat-item h3 {
+    color: var(--dark-green);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    color: var(--dark-text);
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.stat-box {
+    text-align: center;
+    padding: 30px;
+}
+
+.stat-box h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--light-green);
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 18px;
+    color: var(--dark-text);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    transition: all 0.3s;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 62, 47, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h3 {
+    color: var(--white);
+    font-size: 22px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.contact-form .form-control {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
+}
+
+.contact-info {
+    padding: 40px;
+    background: var(--light-gray);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.contact-info h3 {
+    color: var(--dark-green);
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--dark-text);
+}
+
+.contact-info i {
+    color: var(--light-green);
+    margin-right: 15px;
+    width: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 0;
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer i {
+    margin: 0 10px;
+    color: var(--light-green);
+}
+
+/* Dark mode toggle */
+#theme-toggle {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    
+    .section-header h2 {
+        font-size: 36px;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .hero-section,
+    .about-section,
+    .services-section,
+    .portfolio-section,
+    .contact-section {
+        padding: 80px 0;
+    }
+    
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .portfolio-item {
+        margin-bottom: 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section h1 {
+        font-size: 32px;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        padding: 30px 20px;
+        margin-top: 30px;
+    }
+    
+    .footer p {
+        font-size: 14px;
+    }
+}
